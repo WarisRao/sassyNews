@@ -1,0 +1,231 @@
+.feed{
+  background: #f6fbfe;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  padding-top:2rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+}
+
+.feed__item{
+  background: #fff;
+  width:80%;
+  display: flex;
+  flex-direction: row;
+ 
+  margin:2rem 0;
+  
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 7px 40px -4px rgba(143,143,143,1);
+-moz-box-shadow: 7px 7px 40px -4px rgba(143,143,143,1);
+box-shadow: 7px 7px 40px -4px rgba(143,143,143,1);
+
+}
+
+.feed__item--serial {
+  width: 7%;
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: var(--color-secondary-blue);
+  align-self: center;
+  text-align: center;
+}
+
+.feed__item--content {
+  width: 93%;
+  padding:0;
+}
+
+.feed__item--up, .feed__item--down{
+  display: flex;
+  justify-content: flex-start;
+  margin: 1.5rem;
+}
+
+.feed__item--title{
+  
+  transition: all 0.3s; 
+}
+
+.feed__item--title:hover{
+  font-size: 2.05rem;
+}
+
+.feed__item--title a{
+  text-decoration: none;
+  
+  color: var(--color-secondary-blue);
+}
+
+.feed__item--source {
+  
+  color: var(--color-primary-blue);
+}
+
+.feed__item--creationTime,.feed__item--commentCount{
+  margin-left: 5rem;
+  color: var(--color-primary-blue);
+}
+
+.feed__item--by-link{
+text-decoration: none;
+color: var(--color-secondary-blue);
+cursor: pointer;
+} 
+
+.feed__by {
+  color: var(--color-primary-blue);
+}
+
+.feed__item--commentCount-link {
+  text-decoration: none;
+color: var(--color-secondary-blue);
+cursor: pointer;
+}
+
+.feed__comments {
+  color: var(--color-primary-blue);
+}
+/* .feed__btn{
+  display: flex;
+  justify-content: start;
+} */
+
+.feed__btn-upper {
+  display: none;
+}
+
+.feed__btn-previous,.feed__btn-next{
+  margin-top:3rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-left: 3rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: var(--color-secondary-blue);
+  color: var(--color-white);
+  transition: all 0.3s; 
+}
+
+.feed__btn-previous:hover,.feed__btn-next:hover{
+  background-color: var(--color-white);
+  color: var(--color-secondary-blue);
+}
+
+@media only screen and (max-width: 64em) {
+
+  .feed{
+    width: 90%;
+    font-size: 1.8rem;
+  }
+
+  .feed__item {
+    width: 90%;
+  }
+
+  .feed__item--up {
+    margin: 1rem;
+    flex-direction: column;
+    
+  }
+
+  .feed__item--creationTime,.feed__item--commentCount{
+    margin-left: 3.5rem;  
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+
+  .feed{
+    
+    font-size: 1.7rem;
+  
+  }
+}
+
+@media only screen and (max-width: 48em) {
+
+  .feed__item {
+    
+    margin: 1.75rem 0;
+  
+  }
+
+  .feed__item--creationTime,.feed__item--commentCount{
+    margin-left: 2.5rem;  
+    font-size: 1.3rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 37.5em) {
+
+  
+
+  .feed{
+    margin-top: 14rem;
+    font-size: 1.6rem;
+  
+  }
+
+  .feed__item {
+    margin: 1.5rem 0;
+  }
+  .feed__btn-upper {
+    margin:0;
+    display: block;
+  }
+  .feed__item--serial {
+    margin-left:0.5rem;
+    font-size: 2.1rem;
+    
+  }
+
+.feed__item--source {
+  font-size: 1.2rem;
+}
+
+  .feed__item--creationTime,.feed__item--commentCount{
+    margin-left: 1.5rem;  
+    font-size: 1.2rem;
+  }
+
+  
+
+
+}
+
+@media only screen and (max-width: 30em) {
+
+  .feed{
+    font-size: 1.5rem;
+    width: 95%;
+  
+  }
+
+  .feed__item {
+    margin: 1.2rem 0;
+    width: 100%;
+  }
+
+  .feed__item--up, .feed__item--down{
+    
+    margin: 1rem;
+  }
+
+
+.feed__item--source {
+  font-size: 1.1rem;
+}
+
+  .feed__item--creationTime,.feed__item--commentCount{
+    margin-left: 1rem;  
+    font-size: 1.1rem;
+  }
+
+}

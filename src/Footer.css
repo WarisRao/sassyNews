@@ -1,0 +1,227 @@
+/*text*/
+/*font variables added */
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+-medium-screen
+-desktop
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+/*text*/
+/*font variables added */
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+-medium-screen
+-desktop
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+.button {
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  background: #2998ff;
+  transition: all 0.4s; }
+
+.button:hover {
+  background: #ffffff;
+  color: #2998ff;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
+  transform: translateY(-0.5rem); }
+
+.submit-button {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  width: 20%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #2998ff;
+  color: #ffffff;
+  transition: all 0.3s; }
+  @media only screen and (max-width: 56.25em) {
+    .submit-button {
+      margin-top: 0.5rem;
+      margin-left: 0rem;
+      width: 50%; } }
+  @media only screen and (max-width: 30em) {
+    .submit-button {
+      margin-left: 3.5rem; } }
+
+.submit-button:hover {
+  background-color: #ffffff;
+  color: #2998ff; }
+
+.footer {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  background-image: linear-gradient(to right, rgba(41, 152, 255, 0.6), rgba(24, 95, 192, 0.6)), url("./footer.jpg");
+  display: grid;
+  color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-template-columns: [first-start] 10rem [first-end second-start] 1.25fr [second-end third-start] 1.25fr [third-end fourth-start] 1.25fr [fourth-end fifth-start] 1.75fr [fifth-end sixth-start] 10rem [sixth-end];
+  text-align: center; }
+  @media only screen and (max-width: 75em) {
+    .footer {
+      grid-template-columns: [first-start] 7rem [first-end second-start] 1.25fr [second-end third-start] 1.25fr [third-end fourth-start] 1.25fr [fourth-end fifth-start] 1.75fr [fifth-end sixth-start] 7rem [sixth-end]; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      grid-template-columns: [first-start] 1rem [first-end second-start] 1.2fr [second-end third-start] 1.1fr [third-end fourth-start] 1.2fr [fourth-end fifth-start] 1.75fr [fifth-end sixth-start] 1rem [sixth-end]; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      grid-template-columns: [first-start] 1rem [first-end second-start] 2fr [second-end third-start] 2fr [third-end fourth-start] 1rem [fourth-end];
+      grid-template-rows: [first-start] 1rem [first-end second-start] auto [second-end third-start] auto [third-end fourth-start] 1rem [fourth-end]; } }
+  .footer__quote {
+    grid-column: second-start/second-end;
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__quote {
+        grid-row: third-start/third-end; } }
+    .footer__quote--heading {
+      margin-top: 2rem;
+      font-size: 4rem;
+      font-weight: 700; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__quote--heading {
+          font-size: 3rem; } }
+      @media only screen and (max-width: 30em) {
+        .footer__quote--heading {
+          font-size: 2.5rem; } }
+    .footer__quote--text {
+      margin-top: 2rem;
+      line-height: 1.4;
+      font-size: 2.5rem;
+      font-weight: 500; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__quote--text {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 30em) {
+        .footer__quote--text {
+          font-size: 1.6rem; } }
+  .footer__explore {
+    grid-column: third-start/third-end; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__explore {
+        grid-column: second-start/second-end;
+        grid-row: second-start/second-end; } }
+  .footer__contact {
+    grid-column: fourth-start/fourth-end; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__contact {
+        grid-column: third-start/third-end;
+        grid-row: second-start/second-end; } }
+  .footer__stayConnected {
+    grid-column: fifth-start/fifth-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    @media only screen and (max-width: 37.5em) {
+
+      .footer__stayConnected {
+        grid-column: third-start/third-end;
+        grid-row: third-start/third-end; } 
+      }
+    .footer__stayConnected--heading {
+      text-align: left; }
+      @media only screen and (max-width: 30em) {
+        .footer__stayConnected--heading {
+          margin-top: 1rem;
+          text-align: center; } }
+    .footer__stayConnected--form {
+      text-align: left;
+      margin-top: 2rem;
+      line-height: 1.4;
+      font-size: 2.5rem;
+      font-weight: 500; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__stayConnected--form {
+          font-size: 2rem;
+          display: flex;
+          flex-direction: column; } }
+      @media only screen and (max-width: 30em) {
+        .footer__stayConnected--form {
+          margin-top: 1.5rem;
+          font-size: 1.5rem;
+          text-align: center; } }
+
+.list__item {
+  margin: 3rem 0;
+  list-style: none;
+  font-size: 1.7rem;
+  transition: all 0.3s; }
+  @media only screen and (max-width: 30em) {
+    .list__item {
+      margin: 1.5rem 0;
+      font-size: 1.3rem; } }
+
+.list__item:hover {
+  transform: scale(1.2) translate(-0.2rem);
+  font-weight: 700; }
+
+.list__link {
+  text-decoration: none;
+  color: #ffffff; }
+
+@media only screen and (max-width: 56.25em) {
+  .connect-form {
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 30em) {
+  .connect-form {
+    text-align: center; } }
+
+.connect-form-input {
+  padding: 1rem;
+  width: 65%;
+  border-radius: 0.5rem;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  color: #2998ff; }
+  @media only screen and (max-width: 56.25em) {
+    .connect-form-input {
+      font-size: 1.25rem;
+      margin-top: 1.5rem; } }
+  @media only screen and (max-width: 30em) {
+    .connect-form-input {
+      padding: 0.7rem;
+      width: 100%; } }
+
+.connect-form-input:focus {
+  outline: none;
+  border: 2px solid #2998ff; }
+
+
+  .work-around {
+    display: none;
+  }

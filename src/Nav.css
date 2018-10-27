@@ -1,0 +1,148 @@
+.nav{
+  padding: 1.2rem 0rem;
+  margin:10rem auto 3rem auto;
+  font-size: 2.2rem;
+  width: 85%; 
+  display: flex;
+
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  background-color: rgba(0,144,255,0.9);
+  border-radius: 7px;
+  
+  -webkit-box-shadow: 7px 7px 40px -4px rgba(143,143,143,1);
+  -moz-box-shadow: 7px 7px 40px -4px rgba(143,143,143,1);
+  box-shadow: 7px 7px 40px -4px rgba(143,143,143,1);
+}
+
+.nav__menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__menu-sassyNewsLogo {
+width: 20%;
+}
+
+
+
+.nav__menu-sassyNewsItems {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav__menu-elem{
+ 
+
+}
+
+.nav__menu-elem--btn{
+  font-size: 2.5rem;
+  padding: 1rem;
+  color: var(--color-white);
+  background-color: rgba(0,144,255,0.05);
+  border:none;
+  transition: all 0.2s; 
+}
+
+.sassyNewsLogo {
+  font-size: 3rem;
+}
+
+.nav__menu-elem--btn:hover{
+  cursor: pointer;
+  border-bottom: 2px solid var(--color-white);
+}
+
+@media only screen and (max-width: 64em) {
+  .nav {
+    width: 95%;
+  }
+
+  .nav__menu-sassyNewsLogo {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+
+  .nav{
+    margin-top: 8rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0rem;
+   
+  }
+
+  .nav__menu-sassyNewsLogo {
+    width: 30%;
+    }
+
+  .nav__menu-sassyNewsItems {
+    width: 70%; 
+  }
+
+  .nav__menu-elem--btn{
+    font-size: 2rem;
+    padding: 0.7rem;
+   
+  }
+
+  .nav__menu-elem--btn:focus {
+    border:none;
+  }
+
+  .sassyNewsLogo {
+    font-size: 2.5rem;
+  }
+ }
+
+
+ @media only screen and (max-width: 37.5em) {
+
+  .nav{
+    margin-top: 7rem;
+    margin-bottom: 1.3rem;
+    padding: 0.2rem 0rem;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left:0;
+
+   z-index: 90;
+  }
+
+  .nav__menu {
+    flex-direction: column;
+    justify-content: space-between;;
+  }
+
+  .nav__menu-sassyNewsLogo {
+    text-align: center;
+    width: 100%;
+    }
+
+   
+
+  .nav__menu-sassyNewsItems {
+    margin-top: 0.2rem;
+    width: 100%; 
+  }
+
+  .nav__menu-elem--btn{
+    font-size: 2rem;
+    padding: 0.7rem;
+   
+  }
+
+  .sassyNewsLogo {
+    font-size: 2.5rem;
+  }
+ }
+
+
+
+ 
+/* Nav completed */
+
+  

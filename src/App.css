@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Roboto');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+ 
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+
+
+
+:root{
+  /* colors */
+  --color-primary:#434343;
+  --color-navbar: #f4f7f8;
+  --color-blue: #54acca;
+  --color-grey: #b0b2b5;
+  --color-white: #ffffff;
+  --color-primary-blue: #185fc0;
+  --color-secondary-blue: #2998ff;
+  
+  /*navbar color */
+  --color-navbar: #f4f7f8;
+  --color-navbar-initial-1: #13405d;
+  --color-navbar-initial-2: #123e5b;
+
+  --color-margin: #cccdcf;
+
+  /*background colors*/
+  --color-body-background: #ffffff;
+  --color-body-background-secondary: #f6fbfe;
+  /*text*/
+ --primary-font-family: 'Montserrat',  Helvetica, sans-serif;
+--secondary-font-family: 'Open Sans', sans-serif;
+--tertiary-font-family: 'Roboto', sans-serif;
+--lato-font-family: 'Lato', sans-serif;
+--raleway-font-family: 'Raleway', sans-serif;
+ 
+  --code-font-family: "Anonymous-pro",monospace;
+  --color-heading: #343639;
+   
+ 
+  --color-text-primary:#3c3c3c;
+  
+  
+  /*font variables added */
+  --slide-font-family: 'Quicksand', sans-serif;
+
+  font-size: 62.5%;
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+  
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #2998ff; 
+  background: var(--color-navbar); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2998ff; 
+  
+  border-radius: 10px;
+}
+
+body{
+  max-width: 100%;
+  font-family: var(--primary-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: var(--dim-text-stroke) var(--color-text-stroke);
+  background: var(--color-body-background);
+  
+}
+
+h1{
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 7rem;
+  
+}
+
+h2{
+  color: var(--color-heading);
+  font-size:5rem;
+  font-weight: 600;
+ 
+}
+
+.bold-heading {
+  font-size: 3rem;
+}
+
+.heading {
+  color: var(--color-secondary-blue);
+  font-size: 5.5rem;
+  margin-top: 4rem;
+}
+
+.heading-3 {
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.para {
+  margin-top: 6rem;
+  font-size: 2rem;
+  line-height: 2;
+  margin-bottom: 5rem; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* --dim-text-stroke: 0.45px; */
+  /* --color-text-stroke: rgba(0,0,0,0.5); */
+/* --dim-h1-font-size: 1.4rem;
+  --dim-h2-font-size: 1.2rem;
+  --dim-sidebar-font-size: 1.3rem; */
+/* --color-text-secondary: rgb(101,101,101); */
+  /*card*/
+/* --dim-card-margin: .2rem;
+--dim-card-width: 100vw; */
+
+/* --color-accent: #f70001; */
+  /* --color-okay: rgb(0,221,117); */
+  /* --color-red: #fe2e59;
+  --color-red-half-transparent:rgba(254,46,89, .4); 
+  --color-blue: #00bfe3;
+  --color-blue-dark: #1166ea; */
+  /* --color-blue-dark: rgba(0,191,227,.8); */
+  /* --color-primary-light: rgba(33,33,33,.1);
+  --color-blue2: #46bcde;
+  --status-msg-bg:rgba(0,191,227,0), rgba(0,191,227,0);
+  --color-yellow: #e3c454;
+  --dim-border-radius-primary: 3px;
+  --dim-page-margin: 4rem;
+   */
+/*form*/
+/* --color-input: #fff;
+--dim-form-margin: .75rem;
+--dim-form-input-margin: .5rem;
+--dim-form-padding: 1rem;
+--dim-form-input-padding: .75rem;
+--dim-form-input-submit-margin: .75rem;
+--dim-form-input-border: 1px solid rgba(255, 255, 255, .2); */
+
+/*add-page*/
+/* --dim-add-page-margin:.2rem;
+--dim-add-page-padding: 1rem;
+--dim-add-page-line-height: 1.5rem;
+--dim-add-page-font-size: 1rem;
+--dim-add-page-icon-font-size: 1.5rem;
+--dim-add-page-icon-line-height: 2rem; */
+
+/*toastr*/
+/* --pos-toastr: fixed;
+--pos-toastr-top: 3.9rem;
+--pos-toastr-right: 1rem;
+ --depth-toastr:150;
+ --dim-toastr-width: 65vw; */
+
+ /*toast*/
+ /* --pos-toast-close-top: .85rem;
+ --pos-toast-close-right: 1rem;
+ --dim-toast-margin-top: 1rem;
+ --dim-toast-padding: 1rem;
+ --dim-toast-font-size: 1rem;
+ --dim-toast-padding:1rem;
+ --color-toast-warning: rgba(255,20,88,0.35);
+ --color-toast-okay: rgba(0,221,117,0.35);
+ --dim-toast-warning-box-shadow: 1px 1px 5px -0px rgba(255, 20, 80, 0.25);
+ --dim-toast-okay-box-shadow: 1px 1px 5px -0px rgba(0,221,117,0.25);
+} */
+/* .card{
+  background: var(--color-primary);
+  font-family: var(--primary-font-family);
+  border: 1px solid;
+  padding:.75rem .75rem;
+  -webkit-box-shadow: 2px 3px 5px -0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 3px 5px -0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 5px -0px rgba(0,0,0,0.75);
+  transition: box-shadow 200ms ease-in-out;
+  border-color: rgba(0,0,0,0.14);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  z-index: 100;
+} */
+
+/* .card.card-medium{
+  height: auto;
+  width: var(--dim-card-width);
+  padding: var(--dim-form-padding);
+  margin: var(--dim-card-margin);
+} */
+/* .card.raw{
+  width: 60%;
+  height: auto;
+} */
+
+
+/* form textarea{
+  color: var(--color-text-primary);
+  background: none;
+  padding: var(--dim-form-input-padding);
+  font-size: 1.3rem;
+  border: var(--dim-form-input-border);
+  border-radius: var(--dim-border-radius-primary);
+} */
+/* form input{
+  color: var(--color-text-primary);
+  background: none;
+  padding: var(--dim-form-input-padding);
+  font-size: 1.3rem;
+  border: var(--dim-form-input-border);
+  border-radius: var(--dim-border-radius-primary);
+} */
+/* form input[type="submit"]{
+  -webkit-appearance: none;
+  background: none;
+  color: var(--color-accent);
+  margin-top: var(--dim-form-input-submit-margin);
+  border: 1px solid var(--color-accent);
+  cursor: pointer;
+} */
+
+/* .page-container{
+  margin-top: var(--dim-page-margin);
+  margin-bottom: var(--dim-page-margin);
+} */
+
+/* @media only screen and (min-width: 600px){
+  .card.card-medium{
+    width: calc(var(--dim-card-width) - 50vw);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: calc(var(--dim-card-margin) + 2vw);
+    margin-bottom: calc(var(--dim-card-margin)+20vw);
+  }
+} */
+
+/* @media screen and (orientation: landscape){
+  .card.card-medium{
+    margin-bottom: 5vh;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .card.card-medium{
+    width: calc(var(--dim-card-width) - 70vw);
+  }
+} */
+
+

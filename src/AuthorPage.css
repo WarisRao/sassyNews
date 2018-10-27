@@ -1,0 +1,55 @@
+.commentPage {
+   
+    margin: 3rem auto;
+    
+}
+
+.user {
+    background: var(--color-body-background-secondary);
+    margin: 2rem auto;
+    width: 80%;
+    height: 40vh;
+    padding-top: 2.7rem;
+
+}
+
+.user__content {
+    background: var(--color-body-background);
+    width: 50%;
+    margin: 1rem auto;
+    -webkit-box-shadow: 7px 7px 40px -4px rgba(143,143,143,1);
+    -moz-box-shadow: 7px 7px 40px -4px rgba(143,143,143,1);
+    box-shadow: 7px 7px 40px -4px rgba(143,143,143,1);
+    
+}
+
+.user--profile {
+    margin-top: 2rem;
+}
+
+.user--text {
+    color: var(--color-primary-blue);
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+
+.user--creationTime {
+    padding-bottom: 2rem;
+
+}
+
+@media only screen and (max-width: 37.5em) {
+    .commentPage {
+   
+       margin-top: 18rem;
+        
+    }
+
+    .user--text {
+        color: var(--color-primary-blue);
+        font-size: 1.8rem;
+        margin: 1.5rem auto;
+    }
+
+    
+}
